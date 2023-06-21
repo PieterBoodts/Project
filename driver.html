@@ -1,94 +1,98 @@
 <!DOCTYPE html>
 <html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Word een chauffeur</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Word een chauffeur</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-    <header>
-        
-        <div class="container">
-            <div class="col6">
-                <img src="../Img/Logo.png" class="logo">
-                <div class="input-box">
-                    <i class="fa fa-map-marker"></i>
-                    <input type="text" placeholder="Vertel ons uw locatie"/>
-                    <button class="s-btn">
-                        <i class="fa fa-long-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="col6">
-                <ul class="topnav">
-                    
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="header-bottom">
+    <body>
+        <header>
             <div class="container">
-                <ul class="bottomnav">
-                    <li><a href="index.html"><i class="fa fa-home"></i> &nbsp;Home</a>
-                    </li>
-                    <li><a href="about.html"><i class="fa fa-exclamation-circle"></i> &nbsp;About</a>
-                    </li>
-                    <li><a href="rewards.html"><i class="fa fa-gift"></i> &nbsp;Beloningen</a></li>
-                    <li><a href="contact.html"><i class="fa fa-map-marker"></i> &nbsp;Contacteer</a></li>
-                    <li><a href="driver.html">&nbsp;Word een bestuurder!</a></li>
-                </ul>
-                
+                <div class="col6">
+                    <img src="Img/Logo.png" class="logo" />
+                    <div class="input-box">
+                        <i class="fa fa-map-marker"></i>
+                        <input type="text" placeholder="Vertel ons uw locatie" />
+                        <button class="s-btn">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col6">
+                    <ul class="topnav"></ul>
+                </div>
                 <div class="clearfix"></div>
             </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <ul class="bottomnav">
+                        <li>
+                            <a href="index.html"><i class="fa fa-home"></i> &nbsp;Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html"><i class="fa fa-exclamation-circle"></i> &nbsp;About</a>
+                        </li>
+                        <li>
+                            <a href="rewards.html"><i class="fa fa-gift"></i> &nbsp;Beloningen</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><i class="fa fa-map-marker"></i> &nbsp;Contacteer</a>
+                        </li>
+                        <li>
+                            <a href="driver.html">&nbsp;Wordt een bestuurder!</a>
+                        </li>
+                    </ul>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h1>Word een chauffeur</h1>
+            <p>Vul het onderstaande formulier in om chauffeur te worden.</p>
+            <form action="submit_driver_form.php" method="POST">
+                <!-- Driver form fields here -->
+                <div class="form-group">
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="telefoon">Telefoonnummer:</label>
+                    <input type="tel" id="telefoon" name="telefoon" required />
+                </div>
+                <div class="form-group">
+                    <label for="rijbewijs">Rijbewijsnummer:</label>
+                    <input type="text" id="rijbewijs" name="rijbewijs" required />
+                </div>
+                <button type="submit" class="btn-r">Verzenden</button>
+            </form>
         </div>
 
-  <div class="container">
-    <h1>Word een chauffeur</h1>
-    <p>Vul het onderstaande formulier in om chauffeur te worden.</p>
-    <form action="submit_driver_form.php" method="POST">
-      <!-- Driver form fields here -->
-      <div class="form-group">
-        <label for="naam">Naam:</label>
-        <input type="text" id="naam" name="naam" required>
-      </div>
-      <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="telefoon">Telefoonnummer:</label>
-        <input type="tel" id="telefoon" name="telefoon" required>
-      </div>
-      <div class="form-group">
-        <label for="rijbewijs">Rijbewijsnummer:</label>
-        <input type="text" id="rijbewijs" name="rijbewijs" required>
-      </div>
-      <button type="submit" class="btn-r">Verzenden</button>
-    </form>
-  </div>
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
 
-  <footer class="footer-distributed">
-    <div class="footer-right">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
-    </div>
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="/index.html" class="link-1">Home</a>
+                    <a href="/about.html">Over ons</a>
 
-    <div class="footer-left">
-        <p class="footer-links">
-            <a href="#" class="link-1">Home</a>
-            <a href="#">Over ons</a>
-            <a href="#">Faq</a>
-            <a href="#">Contacteer</a>
-     </p>
-     <p>Carpool &copy; 2023</p>
-    </div>
-</footer>
-
-</body>
-
+                    <a href="/contact.html">Contacteer</a>
+                </p>
+                <p>Carpool &copy; 2023</p>
+            </div>
+        </footer>
+    </body>
 </html>
